@@ -1,96 +1,300 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
-
-    <title>Jumbotron Template for Bootstrap</title>
-
-
-    <!-- Custom styles for this template -->
-    <link href="jumbotron.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-
-<body>
-
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Project name</a>
-        </div>
-        <div class="navbar-collapse collapse">
-            <form class="navbar-form navbar-right" role="form">
-                <div class="form-group">
-                    <input type="text" placeholder="Email" class="form-control">
-                </div>
-                <div class="form-group">
-                    <input type="password" placeholder="Password" class="form-control">
-                </div>
-                <button type="submit" class="btn btn-success">Sign in</button>
-            </form>
-        </div><!--/.navbar-collapse -->
-    </div>
-</div>
-
-<!-- Main jumbotron for a primary marketing message or call to action -->
-<div class="jumbotron">
-    <div class="container">
-        <h1>Hello</h1>
-        <p>This is from dev branch. </p>
-        <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
-    </div>
-</div>
-
-<div class="container">
-    <!-- Example row of columns -->
-    <div class="row">
-        <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-    </div>
-
-    <hr>
-
-    <footer>
-        <p>&copy; Company 2014</p>
-    </footer>
-</div> <!-- /container -->
-
-
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-</body>
-</html>
+<%
+out.println("<!DOCTYPE html>");
+out.println("<html>");
+out.println("    <head>");
+out.println("        <meta charset=\"utf-8\">");
+out.println("        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">");
+out.println("  		<title>Highway - Free CSS Template</title>");
+out.println("<!-- ");
+out.println("");
+out.println("Highway Template");
+out.println("");
+out.println("https://templatemo.com/tm-520-highway");
+out.println("");
+out.println("-->");
+out.println("        <meta name=\"description\" content=\"\">");
+out.println("        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">");
+out.println("        <link rel=\"apple-touch-icon\" href=\"apple-touch-icon.jpg\">");
+out.println("");
+out.println("        <link rel=\"stylesheet\" href=\"css/bootstrap.min.css\">");
+out.println("        <link rel=\"stylesheet\" href=\"css/bootstrap-theme.min.css\">");
+out.println("        <link rel=\"stylesheet\" href=\"css/fontAwesome.css\">");
+out.println("        <link rel=\"stylesheet\" href=\"css/light-box.css\">");
+out.println("        <link rel=\"stylesheet\" href=\"css/templatemo-style.css\">");
+out.println("");
+out.println("        <link href=\"https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900\" rel=\"stylesheet\">");
+out.println("");
+out.println("        <script src=\"js/vendor/modernizr-2.8.3-respond-1.4.2.min.js\"></script>");
+out.println("    </head>");
+out.println("");
+out.println("<body>");
+out.println("");
+out.println("    <nav>");
+out.println("        <div class=\"logo\">");
+out.println("            <a href=\"index.html\">High<em>way</em></a>");
+out.println("        </div>");
+out.println("        <div class=\"menu-icon\">");
+out.println("        <span></span>");
+out.println("      </div>");
+out.println("    </nav>");
+out.println("");
+out.println("    <div id=\"video-container\">");
+out.println("        <div class=\"video-overlay\"></div>");
+out.println("        <div class=\"video-content\">");
+out.println("            <div class=\"inner\">");
+out.println("              <h1>Welcome to <em>Highway</em></h1>");
+out.println("              <p>FREE CSS TEMPLATE by templatemo</p>");
+out.println("              <p>Homepage with full-width image gallery</p>");
+out.println("                <div class=\"scroll-icon\">");
+out.println("                    <a class=\"scrollTo\" data-scrollTo=\"portfolio\" href=\"#\"><img src=\"img/scroll-icon.png\" alt=\"\"></a>");
+out.println("                </div>    ");
+out.println("            </div>");
+out.println("        </div>");
+out.println("        <video autoplay loop muted>");
+out.println("        	<source src=\"highway-loop.mp4\" type=\"video/mp4\" />");
+out.println("        </video>");
+out.println("    </div>");
+out.println("");
+out.println("");
+out.println("    <div class=\"full-screen-portfolio\" id=\"portfolio\">");
+out.println("        <div class=\"container-fluid\">");
+out.println("            <div class=\"col-md-4 col-sm-6\">");
+out.println("                <div class=\"portfolio-item\">");
+out.println("                    <a href=\"img/big_portfolio_item_4.jpg\" data-lightbox=\"image-1\"><div class=\"thumb\">");
+out.println("                        <div class=\"hover-effect\">");
+out.println("                            <div class=\"hover-content\">");
+out.println("                                <h1>Biodiesel <em>squid</em></h1>");
+out.println("                                <p>Awesome Subtittle Goes Here</p>");
+out.println("                            </div>");
+out.println("                        </div>");
+out.println("                        <div class=\"image\">");
+out.println("                            <img src=\"img/portfolio_item_4.jpg\">");
+out.println("                        </div>");
+out.println("                    </div></a>");
+out.println("                </div>");
+out.println("            </div>");
+out.println("            <div class=\"col-md-4 col-sm-6\">");
+out.println("                <div class=\"portfolio-item\">");
+out.println("                    <a href=\"img/big_portfolio_item_2.jpg\" data-lightbox=\"image-1\"><div class=\"thumb\">");
+out.println("                        <div class=\"hover-effect\">");
+out.println("                            <div class=\"hover-content\">");
+out.println("                                <h1>raclette <em>taxidermy</em></h1>");
+out.println("                                <p>Awesome Subtittle Goes Here</p>");
+out.println("                            </div>");
+out.println("                        </div>");
+out.println("                        <div class=\"image\">");
+out.println("                            <img src=\"img/portfolio_item_2.jpg\">");
+out.println("                        </div>");
+out.println("                    </div></a>");
+out.println("                </div>");
+out.println("            </div>");
+out.println("            <div class=\"col-md-4 col-sm-6\">");
+out.println("                <div class=\"portfolio-item\">");
+out.println("                    <a href=\"img/big_portfolio_item_3.jpg\" data-lightbox=\"image-1\"><div class=\"thumb\">");
+out.println("                        <div class=\"hover-effect\">");
+out.println("                            <div class=\"hover-content\">");
+out.println("                                <h1>humblebrag <em>brunch</em></h1>");
+out.println("                                <p>Awesome Subtittle Goes Here</p>");
+out.println("                            </div>");
+out.println("                        </div>");
+out.println("                        <div class=\"image\">");
+out.println("                            <img src=\"img/portfolio_item_3.jpg\">");
+out.println("                        </div>");
+out.println("                    </div></a>");
+out.println("                </div>");
+out.println("            </div>");
+out.println("            <div class=\"col-md-4 col-sm-6\">");
+out.println("                <div class=\"portfolio-item\">");
+out.println("                    <a href=\"img/big_portfolio_item_1.jpg\" data-lightbox=\"image-1\"><div class=\"thumb\">");
+out.println("                        <div class=\"hover-effect\">");
+out.println("                            <div class=\"hover-content\">");
+out.println("                                <h1>Succulents <em>chambray</em></h1>");
+out.println("                                <p>Awesome Subtittle Goes Here</p>");
+out.println("                            </div>");
+out.println("                        </div>");
+out.println("                        <div class=\"image\">");
+out.println("                            <img src=\"img/portfolio_item_1.jpg\">");
+out.println("                        </div>");
+out.println("                    </div></a>");
+out.println("                </div>");
+out.println("            </div>");
+out.println("            <div class=\"col-md-4 col-sm-6\">");
+out.println("                <div class=\"portfolio-item\">");
+out.println("                    <a href=\"img/big_portfolio_item_5.jpg\" data-lightbox=\"image-1\"><div class=\"thumb\">");
+out.println("                        <div class=\"hover-effect\">");
+out.println("                            <div class=\"hover-content\">");
+out.println("                                <h1>freegan <em>aesthetic</em></h1>");
+out.println("                                <p>Awesome Subtittle Goes Here</p>");
+out.println("                            </div>");
+out.println("                        </div>");
+out.println("                        <div class=\"image\">");
+out.println("                            <img src=\"img/portfolio_item_5.jpg\">");
+out.println("                        </div>");
+out.println("                    </div></a>");
+out.println("                </div>");
+out.println("            </div>");
+out.println("            <div class=\"col-md-4 col-sm-6\">");
+out.println("                <div class=\"portfolio-item\">");
+out.println("                    <a href=\"img/big_portfolio_item_6.jpg\" data-lightbox=\"image-1\"><div class=\"thumb\">");
+out.println("                        <div class=\"hover-effect\">");
+out.println("                            <div class=\"hover-content\">");
+out.println("                                <h1>taiyaki <em>vegan</em></h1>");
+out.println("                                <p>Awesome Subtittle Goes Here</p>");
+out.println("                            </div>");
+out.println("                        </div>");
+out.println("                        <div class=\"image\">");
+out.println("                            <img src=\"img/portfolio_item_6.jpg\">");
+out.println("                        </div>");
+out.println("                    </div></a>");
+out.println("                </div>");
+out.println("            </div>");
+out.println("            <div class=\"col-md-4 col-sm-6\">");
+out.println("                <div class=\"portfolio-item\">");
+out.println("                    <a href=\"img/big_portfolio_item_7.jpg\" data-lightbox=\"image-1\"><div class=\"thumb\">");
+out.println("                        <div class=\"hover-effect\">");
+out.println("                            <div class=\"hover-content\">");
+out.println("                                <h1>Thundercats <em>santo</em></h1>");
+out.println("                                <p>Awesome Subtittle Goes Here</p>");
+out.println("                            </div>");
+out.println("                        </div>");
+out.println("                        <div class=\"image\">");
+out.println("                            <img src=\"img/portfolio_item_7.jpg\">");
+out.println("                        </div>");
+out.println("                    </div></a>");
+out.println("                </div>");
+out.println("            </div>");
+out.println("            <div class=\"col-md-4 col-sm-6\">");
+out.println("                <div class=\"portfolio-item\">");
+out.println("                    <a href=\"img/big_portfolio_item_8.jpg\" data-lightbox=\"image-1\"><div class=\"thumb\">");
+out.println("                        <div class=\"hover-effect\">");
+out.println("                            <div class=\"hover-content\">");
+out.println("                                <h1>wayfarers <em>yuccie</em></h1>");
+out.println("                                <p>Awesome Subtittle Goes Here</p>");
+out.println("                            </div>");
+out.println("                        </div>");
+out.println("                        <div class=\"image\">");
+out.println("                            <img src=\"img/portfolio_item_8.jpg\">");
+out.println("                        </div>");
+out.println("                    </div></a>");
+out.println("                </div>");
+out.println("            </div>");
+out.println("            <div class=\"col-md-4 col-sm-6\">");
+out.println("            	<div class=\"portfolio-item\">");
+out.println("                	<a href=\"img/big_portfolio_item_9.jpg\" data-lightbox=\"image-1\"><div class=\"thumb\">");
+out.println("                        <div class=\"hover-effect\">");
+out.println("                            <div class=\"hover-content\">");
+out.println("                                <h1>disrupt <em>street</em></h1>");
+out.println("                                <p>Awesome Subtittle Goes Here</p>");
+out.println("                            </div>");
+out.println("                        </div>");
+out.println("                        <div class=\"image\">");
+out.println("                            <img src=\"img/portfolio_item_9.jpg\">");
+out.println("                        </div>");
+out.println("                    </div></a>");
+out.println("                </div>");
+out.println("            </div>");
+out.println("        </div>");
+out.println("    </div>");
+out.println("");
+out.println("");
+out.println("    <footer>");
+out.println("        <div class=\"container-fluid\">");
+out.println("            <div class=\"col-md-12\">");
+out.println("                <p>Copyright &copy; 2018 Company Name ");
+out.println("    ");
+out.println("    | Designed by TemplateMo</p>");
+out.println("            </div>");
+out.println("        </div>");
+out.println("    </footer>");
+out.println("");
+out.println("");
+out.println("      <!-- Modal button -->");
+out.println("    <div class=\"popup-icon\">");
+out.println("      <button id=\"modBtn\" class=\"modal-btn\"><img src=\"img/contact-icon.png\" alt=\"\"></button>");
+out.println("    </div>  ");
+out.println("");
+out.println("    <!-- Modal -->");
+out.println("    <div id=\"modal\" class=\"modal\">");
+out.println("      <!-- Modal Content -->");
+out.println("      <div class=\"modal-content\">");
+out.println("        <!-- Modal Header -->");
+out.println("        <div class=\"modal-header\">");
+out.println("          <h3 class=\"header-title\">Say hello to <em>Highway</em></h3>");
+out.println("          <div class=\"close-btn\"><img src=\"img/close_contact.png\" alt=\"\"></div>    ");
+out.println("        </div>");
+out.println("        <!-- Modal Body -->");
+out.println("        <div class=\"modal-body\">");
+out.println("          <div class=\"col-md-6 col-md-offset-3\">");
+out.println("            <form id=\"contact\" action=\"\" method=\"post\">");
+out.println("                <div class=\"row\">");
+out.println("                    <div class=\"col-md-12\">");
+out.println("                      <fieldset>");
+out.println("                        <input name=\"name\" type=\"text\" class=\"form-control\" id=\"name\" placeholder=\"Your name...\" required>");
+out.println("                      </fieldset>");
+out.println("                    </div>");
+out.println("                    <div class=\"col-md-12\">");
+out.println("                      <fieldset>");
+out.println("                        <input name=\"email\" type=\"email\" class=\"form-control\" id=\"email\" placeholder=\"Your email...\" required>");
+out.println("                      </fieldset>");
+out.println("                    </div>");
+out.println("                    <div class=\"col-md-12\">");
+out.println("                      <fieldset>");
+out.println("                        <textarea name=\"message\" rows=\"6\" class=\"form-control\" id=\"message\" placeholder=\"Your message...\" required></textarea>");
+out.println("                      </fieldset>");
+out.println("                    </div>");
+out.println("                    <div class=\"col-md-12\">");
+out.println("                      <fieldset>");
+out.println("                        <button type=\"submit\" id=\"form-submit\" class=\"btn\">Send Message Now</button>");
+out.println("                      </fieldset>");
+out.println("                    </div>");
+out.println("                </div>");
+out.println("            </form>");
+out.println("          </div>");
+out.println("        </div>");
+out.println("      </div>");
+out.println("    </div>");
+out.println("");
+out.println("    ");
+out.println("");
+out.println("    <section class=\"overlay-menu\">");
+out.println("      <div class=\"container\">");
+out.println("        <div class=\"row\">");
+out.println("          <div class=\"main-menu\">");
+out.println("              <ul>");
+out.println("                  <li>");
+out.println("                      <a href=\"index.html\">Home - Full-width</a>");
+out.println("                  </li>");
+out.println("                  <li>");
+out.println("                      <a href=\"masonry.html\">Home - Masonry</a>");
+out.println("                  </li>");
+out.println("                  <li>");
+out.println("                      <a href=\"grid.html\">Home - Small-width</a>");
+out.println("                  </li>");
+out.println("                  <li>");
+out.println("                      <a href=\"about.html\">About Us</a>");
+out.println("                  </li>");
+out.println("                  <li>");
+out.println("                      <a href=\"blog.html\">Blog Entries</a>");
+out.println("                  </li>");
+out.println("                  <li>");
+out.println("                      <a href=\"single-post.html\">Single Post</a>");
+out.println("                  </li>");
+out.println("              </ul>");
+out.println("              <p>We create awesome templates for you.</p>");
+out.println("          </div>");
+out.println("        </div>");
+out.println("      </div>");
+out.println("    </section>");
+out.println("");
+out.println("    <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js\"></script>");
+out.println("    <script>window.jQuery || document.write('<script src=\"js/vendor/jquery-1.11.2.min.js\"><\\/script>')</script>");
+out.println("");
+out.println("    <script src=\"js/vendor/bootstrap.min.js\"></script>");
+out.println("    ");
+out.println("    <script src=\"js/plugins.js\"></script>");
+out.println("    <script src=\"js/main.js\"></script>");
+out.println("");
+out.println("    ");
+out.println("</body>");
+out.println("</html>");
+%>
